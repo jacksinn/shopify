@@ -21,7 +21,7 @@ const defaultQuery = gql`
     }
 `
 
-export default async function getPage(context: ShopifyApolloContext, params: GetPageParams, customQuery?: CustomQuery) {
+export async function getPage(context: ShopifyApolloContext, params: GetPageParams, customQuery?: CustomQuery) {
   const variables: QueryRootPageArgs = {
     ...(params.handle && { handle: params.handle }),
     ...(params.id && { id: params.id })
