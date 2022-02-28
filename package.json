@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "lerna run build --stream",
-    "build:deps": "lerna run build --ignore @vue-storefront/shopify-theme --include-dependencies",
+    "build:deps": "lerna run build --ignore https://github.com/jacksinn/shopify --include-dependencies",
     "build:api-client": "cd packages/api-client && yarn build",
     "build:composables": "cd packages/composables && yarn build",
     "build:apollo": "cd packages/apollo && yarn build",
